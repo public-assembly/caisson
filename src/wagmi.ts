@@ -21,7 +21,7 @@ const { provider, chains } = configureChains(
 
 export const client = createClient(
   getDefaultClient({
-    appName: 'Flexible DAO Interfaces',
+    appName: 'skl-template',
     autoConnect: true,
     provider,
   })

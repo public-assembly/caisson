@@ -14,7 +14,7 @@ function App({ Component, pageProps }: AppProps) {
     <WagmiConfig client={client}>
       <ConnectKitProvider>
         <NextHead>
-          <title>Flexible DAO Interfaces</title>
+          <title>skl-template</title>
         </NextHead>
 
         {mounted && <Component {...pageProps} />}
