@@ -1,11 +1,11 @@
-import { Header } from "../components";
+import { Header } from '../components'
 
 function Page() {
-  return (
-    <>
-      <Header />
-    </>
-  );
+	return (
+		<>
+			<Header />
+		</>
+	)
 }
 
-export default Page;
+export default Page
