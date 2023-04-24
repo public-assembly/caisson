@@ -14,7 +14,7 @@ function App({ Component, pageProps }: AppProps) {
     <WagmiConfig client={client}>
       <ConnectKitProvider>
         <NextHead>
-          <title>skl-template</title>
+          <title>Caisson</title>
         </NextHead>
 
         {mounted && <Component {...pageProps} />}
