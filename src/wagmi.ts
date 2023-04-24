@@ -1,27 +1,25 @@
-// ConnectKit
-import { getDefaultClient } from 'connectkit';
-// wagmi
-import { createClient, configureChains } from 'wagmi';
-import { mainnet, goerli } from 'wagmi/chains';
-import { alchemyProvider } from 'wagmi/providers/alchemy';
-import { infuraProvider } from 'wagmi/providers/infura';
-import { publicProvider } from 'wagmi/providers/public';
+import { getDefaultClient } from "connectkit";
+import { createClient, configureChains } from "wagmi";
+import { mainnet, goerli } from "wagmi/chains";
+import { alchemyProvider } from "wagmi/providers/alchemy";
+import { infuraProvider } from "wagmi/providers/infura";
+import { publicProvider } from "wagmi/providers/public";
 
-const alchemyId = process.env.NEXT_PUBLIC_ALCHEMY_ID;
-const infuraId = process.env.NEXT_PUBLIC_INFURA_ID;
+const alchemyKey = process.env.NEXT_PUBLIC_ALCHEMY_KEY;
+const infuraKey = process.env.NEXT_PUBLIC_INFURA_KEY;
 
-const { provider, chains } = configureChains(
+const { provider } = configureChains(
   [mainnet, goerli],
   [
-    alchemyProvider({ apiKey: alchemyId as string }),
-    infuraProvider({ apiKey: infuraId as string }),
+    alchemyProvider({ apiKey: alchemyKey as string }),
+    infuraProvider({ apiKey: infuraKey as string }),
     publicProvider(),
   ]
 );
 
 export const client = createClient(
   getDefaultClient({
-    appName: 'skl-template',
+    appName: "Caisson",
     autoConnect: true,
     provider,
   })
