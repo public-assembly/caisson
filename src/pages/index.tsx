@@ -1,9 +1,9 @@
-import { ConnectKitButton } from "connectkit";
+import { Header } from "../components";
 
 function Page() {
   return (
     <>
-      <ConnectKitButton />
+      <Header />
     </>
   );
 }
