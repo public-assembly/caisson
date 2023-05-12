@@ -9,7 +9,7 @@ const alchemyKey = process.env.NEXT_PUBLIC_ALCHEMY_KEY
 const infuraKey = process.env.NEXT_PUBLIC_INFURA_KEY
 
 const { provider, chains } = configureChains(
-	[mainnet, optimism, arbitrum, goerli, sepolia ],
+	[mainnet, optimism, arbitrum, goerli, sepolia],
 	[
 		alchemyProvider({ apiKey: alchemyKey as string }),
 		infuraProvider({ apiKey: infuraKey as string }),
