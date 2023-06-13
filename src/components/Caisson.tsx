@@ -7,5 +7,5 @@ export function Caisson() {
         foundation
       </p>
     </div>
-  );
+  )
 }

@@ -8,5 +8,5 @@ export function Deploy() {
     >
       Deploy template
     </a>
-  );
+  )
 }
