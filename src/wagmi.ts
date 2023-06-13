@@ -1,27 +1,25 @@
-import { getDefaultClient } from 'connectkit'
-import { createClient, configureChains } from 'wagmi'
+'use client'
+
+import { getDefaultConfig } from 'connectkit'
+import { createConfig, configureChains } from 'wagmi'
 import { mainnet, optimism, arbitrum, goerli, sepolia } from 'wagmi/chains'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
-import { infuraProvider } from 'wagmi/providers/infura'
 import { publicProvider } from 'wagmi/providers/public'
 
 const alchemyKey = process.env.NEXT_PUBLIC_ALCHEMY_KEY
-const infuraKey = process.env.NEXT_PUBLIC_INFURA_KEY
+const walletConnectID = process.env.NEXT_PUBLIC_WALLET_CONNECT_ID
 
-const { provider, chains } = configureChains(
+const { chains } = configureChains(
   [mainnet, optimism, arbitrum, goerli, sepolia],
-  [
-    alchemyProvider({ apiKey: alchemyKey as string }),
-    infuraProvider({ apiKey: infuraKey as string }),
-    publicProvider(),
-  ],
+  [alchemyProvider({ apiKey: alchemyKey as string }), publicProvider()],
 )
 
-export const client = createClient(
-  getDefaultClient({
+export const config = createConfig(
+  getDefaultConfig({
+    alchemyId: alchemyKey as string,
+    walletConnectProjectId: walletConnectID as string,
     appName: 'Caisson',
     autoConnect: true,
-    provider,
     chains,
   }),
 )
