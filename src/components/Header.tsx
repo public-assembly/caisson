@@ -1,6 +1,6 @@
-import { ConnectKitButton } from "connectkit";
-import { Caisson } from "./Caisson";
-import { Deploy } from "./Deploy";
+import { ConnectKitButton } from 'connectkit'
+import { Caisson } from './Caisson'
+import { Deploy } from './Deploy'
 
 export function Header() {
   return (
@@ -11,5 +11,5 @@ export function Header() {
         <ConnectKitButton />
       </div>
     </div>
-  );
+  )
 }

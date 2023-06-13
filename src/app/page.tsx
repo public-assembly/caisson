@@ -1,11 +1,11 @@
+'use client'
+
 import { Header } from '../components'
 
-function Page() {
-	return (
-		<>
-			<Header />
-		</>
-	)
+export default function Page() {
+  return (
+    <>
+      <Header />
+    </>
+  )
 }
-
-export default Page
