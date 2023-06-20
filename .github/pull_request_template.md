@@ -1,15 +1,7 @@
-## Description
+## Context & motivation
 
-<!--- Describe your changes. -->
-
-## Motivation & context
-
-<!--- Why is this change required? What problem does it solve? -->
+<!--- Why is this an important addition to the template? What problem does it solve? -->
 <!--- If it fixes an open issue, please link to the issue here. -->
-
-## Code review
-
-<!--- Any notes for code review? -->
 
 ## Type of change
 
@@ -20,5 +12,4 @@
 ## Checklist
 
 - [ ] I have done a self-review of my own code
-- [ ] Any new and existing tests pass locally with my changes
 - [ ] My changes generate no new warnings (lint warnings, console warnings, etc)
