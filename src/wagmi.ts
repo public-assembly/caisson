@@ -1,5 +1,3 @@
-'use client'
-
 import { getDefaultConfig } from 'connectkit'
 import { createConfig, configureChains } from 'wagmi'
 import { mainnet, optimism, arbitrum, goerli, sepolia } from 'wagmi/chains'
