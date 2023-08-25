@@ -1,6 +1,6 @@
 import { Header } from '../components'
 
-export default function Page() {
+export default function Home() {
   return (
     <>
       <Header />
