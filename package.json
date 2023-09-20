@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "rome check .",
-    "format": "rome format . --write"
+    "lint": "biome check .",
+    "format": "biome format . --write"
   },
   "dependencies": {
     "connectkit": "^1.5.3",
