@@ -10,7 +10,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
   React.useEffect(() => setMounted(true), [])
   return (
     <WagmiConfig config={config}>
-      <ConnectKitProvider theme='minimal'>
+      <ConnectKitProvider theme="minimal">
         {mounted && children}
       </ConnectKitProvider>
     </WagmiConfig>

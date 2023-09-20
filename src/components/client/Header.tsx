@@ -1,7 +1,5 @@
-'use client'
-
 import { ConnectKitButton } from 'connectkit'
-import { Caisson, Deploy } from '../server'
+import { Caisson, Deploy } from '@/server'
 
 export function Header() {
   return (
