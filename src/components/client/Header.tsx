@@ -1,5 +1,3 @@
-'use client'
-
 import { ConnectKitButton } from 'connectkit'
 import { Caisson, Deploy } from '../server'
 
