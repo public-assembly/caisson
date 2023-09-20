@@ -29,6 +29,7 @@
       "@/client": ["src/components/client/index.ts"],
       "@/server": ["src/components/server/index.ts"],
       "@/utils": ["src/utils/index.ts"],
+      "@/fonts": ["src/app/fonts/index.ts"]
       
     }
   },

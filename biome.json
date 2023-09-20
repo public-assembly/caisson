@@ -1,8 +1,15 @@
 {
   "files": {
     "ignore": [
-      "**/.next", "**/node_modules", "cache", "coverage", "dist",
-      "tsconfig.json", "tsconfig.*.json", "generated.ts", "pnpm-lock.yaml"
+      "**/.next",
+      "**/node_modules",
+      "cache",
+      "coverage",
+      "dist",
+      "tsconfig.json",
+      "tsconfig.*.json",
+      "generated.ts",
+      "pnpm-lock.yaml"
     ]
   },
   "$schema": "./node_modules/biome/configuration_schema.json",
